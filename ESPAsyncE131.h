@@ -19,10 +19,16 @@
 
 #ifndef ESPASYNCE131_H_
 #define ESPASYNCE131_H_
-
-#include <ESPAsyncUDP.h>
-#include <ESP8266WiFi.h>
-#include <ESP8266WiFiMulti.h>
+#ifdef ESP8266
+  #include <ESPAsyncUDP.h>
+  #include <ESP8266WiFi.h>
+  #include <ESP8266WiFiMulti.h>
+#endif
+#ifdef ESP32
+  #include <AsyncUDP.h>
+  #include <WiFi.h>
+  #include <WiFiMulti.h>
+#endif
 #include <lwip/ip_addr.h>
 #include <lwip/igmp.h>
 #include <Arduino.h>

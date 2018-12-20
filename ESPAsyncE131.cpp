@@ -74,8 +74,8 @@ bool ESPAsyncE131::initMulticast(uint16_t universe, uint8_t n) {
         ((universe >> 0) & 0xff));
 
     if (udp.listenMulticast(address, E131_DEFAULT_PORT)) {
-        ip_addr_t ifaddr;
-        ip_addr_t multicast_addr;
+        ip4_addr_t ifaddr;
+        ip4_addr_t multicast_addr;
 
         ifaddr.addr = static_cast<uint32_t>(WiFi.localIP());
         for (uint8_t i = 1; i < n; i++) {

@@ -1,13 +1,17 @@
-ESPAsyncE131 - Asynchronous E.131 (sACN) library for Arduino ESP8266
-====================================================================
-[![Build Status](https://travis-ci.org/forkineye/ESPAsyncE131.svg?branch=master)](https://travis-ci.org/forkineye/ESPAsyncE131)
+ESPAsyncE131 - Asynchronous E.131 (sACN) library for Arduino ESP8266 and ESP32
+==============================================================================
+Note: This repository was forked from https://github.com/forkineye/ESPAsyncE131 and ESP32 support was added.
 
-This library is to simplify the validation and handling of E1.31 sACN (DMX over Ethernet) traffic on Arduino ESP8266 based platforms.  It leverages the [ESPAsyncUDP](https://github.com/me-no-dev/ESPAsyncUDP) library and supports both Unicast and Multicast configurations, exposing the full E1.31 packet to the user.  If you require support for traditional Arduino devices or polling modes, please refer to the [E131](https://github.com/forkineye/E131) library from which this project was derived from.
+This library is to simplify the validation and handling of E1.31 sACN (DMX over Ethernet) traffic on Arduino ESP8266/ESP32 based platforms.  It leverages the [ESPAsyncUDP](https://github.com/me-no-dev/ESPAsyncUDP) library and supports both Unicast and Multicast configurations, exposing the full E1.31 packet to the user.  If you require support for traditional Arduino devices or polling modes, please refer to the [E131](https://github.com/forkineye/E131) library from which this project was derived from.
 
-Requirements
-------------
-- [Adruino for ESP8266](https://github.com/esp8266/Arduino) - Arduino core for ESP8266 - **Latest GitHub version recommended until 2.4 is released**
+Requirements (ESP8266)
+----------------------
+- [Arduino for ESP8266](https://github.com/esp8266/Arduino) - Arduino core for ESP8266 - **Latest GitHub version recommended until 2.4 is released**
 - [ESPAsyncUDP](https://github.com/me-no-dev/ESPAsyncUDP) - Asynchronous UDP Library
+
+Requirements (ESP32)
+----------------------
+- [Arduino for ESP32](https://github.com/espressif/arduino-esp32) - Arduino core for ESP32. Note that the ESP32 package already includes the AsyncUDP library.
 
 API / Usage
 -----------
